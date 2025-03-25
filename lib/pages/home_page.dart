@@ -176,7 +176,8 @@ class _HomePageState extends State<HomePage> {
 
                       // listview of exercises
                       Expanded(
-                        child: ExercisesPage(),
+                        child: ListTile(),
+                        //ExercisesPage(),
                       ),
 
                     ],
