@@ -24,6 +24,7 @@ class _CustomNavBarState extends State<CustomNavBar> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: PersistentTabView(
         context,
         controller: _controller,
@@ -32,7 +33,7 @@ class _CustomNavBarState extends State<CustomNavBar> {
         padding: EdgeInsets.all(12),
         resizeToAvoidBottomInset: true,
         hideNavigationBarWhenKeyboardAppears: true,
-        backgroundColor: Colors.pink.shade50,
+        backgroundColor: Colors.pink.shade200,
         isVisible: true,
         navBarStyle: NavBarStyle.style7,
         animationSettings: NavBarAnimationSettings(
@@ -66,9 +67,15 @@ List<Widget> _buildScreens(){
 List<PersistentBottomNavBarItem> _navBarItems(){
   return[
     PersistentBottomNavBarItem(
-      icon: Icon(CupertinoIcons.home),
+      icon: Icon(CupertinoIcons.home, color: Colors.white,),
       title: 'Home',
+      textStyle: TextStyle(
+        color: Colors.white,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+      ),
       activeColorPrimary: CupertinoColors.systemPink,
+      activeColorSecondary: Colors.white,
       inactiveColorPrimary: Colors.pink.shade100,
       //scrollController: ,
       routeAndNavigatorSettings: RouteAndNavigatorSettings(
@@ -83,9 +90,15 @@ List<PersistentBottomNavBarItem> _navBarItems(){
     ),
 
     PersistentBottomNavBarItem(
-      icon: Icon(CupertinoIcons.heart_circle_fill),
+      icon: Icon(CupertinoIcons.heart_circle_fill, color: Colors.white,),
       title: 'Exercise',
+      textStyle: TextStyle(
+        color: Colors.white,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+      ),
       activeColorPrimary: CupertinoColors.systemPink,
+      activeColorSecondary: Colors.white,
       inactiveColorPrimary: Colors.pink.shade100,
       routeAndNavigatorSettings: RouteAndNavigatorSettings(
         initialRoute: "/",
@@ -99,9 +112,15 @@ List<PersistentBottomNavBarItem> _navBarItems(){
     ),
 
     PersistentBottomNavBarItem(
-      icon: Icon(CupertinoIcons.book_circle_fill),
+      icon: Icon(CupertinoIcons.book_circle_fill, color: Colors.white,),
       title: 'Journal',
+      textStyle: TextStyle(
+        color: Colors.white,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+      ),
       activeColorPrimary: CupertinoColors.systemPink,
+      activeColorSecondary: Colors.white,
       inactiveColorPrimary: Colors.pink.shade100,
       routeAndNavigatorSettings: RouteAndNavigatorSettings(
           initialRoute: "/",
@@ -115,9 +134,15 @@ List<PersistentBottomNavBarItem> _navBarItems(){
     ),
 
     PersistentBottomNavBarItem(
-      icon: Icon(CupertinoIcons.settings_solid),
+      icon: Icon(CupertinoIcons.settings_solid, color: Colors.white,),
       title: 'Settings',
+      textStyle: TextStyle(
+        color: Colors.white,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+      ),
       activeColorPrimary: CupertinoColors.systemPink,
+      activeColorSecondary: Colors.white,
       inactiveColorPrimary: Colors.pink.shade100,
       routeAndNavigatorSettings: RouteAndNavigatorSettings(
           initialRoute: "/",

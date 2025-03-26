@@ -153,30 +153,33 @@ class _HomePageState extends State<HomePage> {
                     topLeft: Radius.circular(30)
                   ),
                 ),
-                padding: EdgeInsets.all(35),
+                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 5),
                 child: Center(
                   child: Column(
                     children: [
                       // exercises row
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            "Exercises",
-                            style: TextStyle(
-                              color: Colors.pink[600],
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Exercises",
+                              style: TextStyle(
+                                color: Colors.pink[600],
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                          ),
 
-                          Icon(Icons.more_horiz, color: Colors.pink[600],),
-                        ],
+                            Icon(Icons.more_horiz, color: Colors.pink[600],),
+                          ],
+                        ),
                       ),
 
                       // listview of exercises
                       Expanded(
-                        child: ListTile(),
+                        child: ExercisesPage(),
                         //ExercisesPage(),
                       ),
 

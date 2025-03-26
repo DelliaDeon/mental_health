@@ -1,4 +1,4 @@
-import 'package:dribble_ui/database/exercises.dart';
+/*import 'package:dribble_ui/database/exercises.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -30,4 +30,4 @@ List<ExerciseSum> exerciseValues = [
     subtitle: 'Write down your thoughts',
     color: Colors.redAccent,
   ),
-];
+];*/

@@ -5,6 +5,7 @@ class MyListTile extends StatelessWidget {
   final String title;
   final String subtitle;
   final color;
+  final Function()? onTap;
 
   const MyListTile({
     super.key,
@@ -12,6 +13,7 @@ class MyListTile extends StatelessWidget {
     required this.icon,
     required this.title,
     required this.subtitle,
+    required this.onTap,
   });
 
   @override
@@ -24,6 +26,8 @@ class MyListTile extends StatelessWidget {
           borderRadius: BorderRadius.circular(13)
         ),
         child: ListTile(
+          // ontap function
+          onTap: onTap,
           // icon
           leading: Container(
             decoration: BoxDecoration(
