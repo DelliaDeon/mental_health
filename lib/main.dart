@@ -1,8 +1,8 @@
 import 'package:dribble_ui/pages/exercise_page.dart';
-import 'package:dribble_ui/pages/exercises_page.dart';
-import 'package:dribble_ui/pages/home_page.dart';
-import 'package:dribble_ui/pages/journal_page.dart';
-import 'package:dribble_ui/pages/settings_page.dart';
+import 'package:dribble_ui/screens/exercises_page.dart';
+import 'package:dribble_ui/screens/home_page.dart';
+import 'package:dribble_ui/screens/journal_page.dart';
+import 'package:dribble_ui/screens/settings_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

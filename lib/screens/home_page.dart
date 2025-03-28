@@ -1,4 +1,4 @@
-import 'package:dribble_ui/pages/exercises_page.dart';
+import 'package:dribble_ui/screens/exercises_page.dart';
 import 'package:dribble_ui/utils/emoji_comp.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
